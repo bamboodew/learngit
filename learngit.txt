@@ -1,0 +1,1111 @@
+
+Administrator@WIN-20150501LJT MINGW64 ~
+$ git config --global user.name "bamboodew"
+
+Administrator@WIN-20150501LJT MINGW64 ~
+$ git config --global uer.email "mrbamboodew@gmail.com"
+
+Administrator@WIN-20150501LJT MINGW64 ~
+$ mkdir learngit
+
+Administrator@WIN-20150501LJT MINGW64 ~
+$ cd learngit
+
+Administrator@WIN-20150501LJT MINGW64 ~/learngit
+$ pwd
+/c/Users/Administrator/learngit
+
+Administrator@WIN-20150501LJT MINGW64 ~/learngit
+$ rm -rf.git
+rm: unknown option -- .
+Try 'rm --help' for more information.
+
+Administrator@WIN-20150501LJT MINGW64 ~/learngit
+$ cd G:
+
+Administrator@WIN-20150501LJT MINGW64 /g
+$ cd Git:
+bash: cd: Git:: No such file or directory
+
+Administrator@WIN-20150501LJT MINGW64 /g
+$ cd Git
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git
+$ mkdir learngit
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git
+$ cd learngit
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit
+$ pwd
+/g/Git/learngit
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit
+$ git init
+Initialized empty Git repository in G:/Git/learngit/.git/
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git add readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git commit -m "readme.txt提交"
+[master (root-commit) eb0a444] readme.txt提交
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (mast                                                               er)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (mast                                                               er)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed                                                               )
+  (use "git checkout -- <file>..." to discard changes in wo                                                               rking directory)
+
+        modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commi                                                               t -a")
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (mast                                                               er)
+$ git diff readme.txt
+diff --git a/readme.txt b/readme.txt
+index eea3f0e..d2bdead 100644
+--- a/readme.txt
++++ b/readme.txt
+@@ -1 +1,2 @@
+-<U+FEFF>11111111
+\ No newline at end of file
++<U+FEFF>11111111
++2222222222
+\ No newline at end of file
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git add readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git commit -m "readme.txt提交"
+[master 808b19d] readme.txt提交
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git diff readme.txt
+diff --git a/readme.txt b/readme.txt
+index d2bdead..ad8d7df 100644
+--- a/readme.txt
++++ b/readme.txt
+@@ -1,2 +1,3 @@
+ <U+FEFF>11111111
+-2222222222
+\ No newline at end of file
++2222222222
++33333333333333
+\ No newline at end of file
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git add readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git commit -m "readme.txt提交"
+[master 027ed22] readme.txt提交
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git log
+commit 027ed2223da4dddfd8baeaa20d7ebeefb2f86f6d
+Author: bamboodew <mrbamboodew@gmail.com>
+Date:   Tue Oct 18 20:44:55 2016 +0800
+
+    readme.txt提交
+
+commit 808b19d1970704e74371fefab7c8047fd1601533
+Author: bamboodew <mrbamboodew@gmail.com>
+Date:   Tue Oct 18 20:40:01 2016 +0800
+
+    readme.txt提交
+
+commit eb0a444c936d54600cf29639a169df1d8f0d411a
+Author: bamboodew <mrbamboodew@gmail.com>
+Date:   Tue Oct 18 20:34:32 2016 +0800
+
+    readme.txt提交
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git log -pretty=oneline
+fatal: unrecognized argument: -pretty=oneline
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git log --pretty=oneline
+027ed2223da4dddfd8baeaa20d7ebeefb2f86f6d readme.txt提交
+808b19d1970704e74371fefab7c8047fd1601533 readme.txt提交
+eb0a444c936d54600cf29639a169df1d8f0d411a readme.txt提交
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git reset --hard HEAD^
+HEAD is now at 808b19d readme.txt提交
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ cat readme.txt
+11111111
+2222222222
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git log --pretty=oneline
+808b19d1970704e74371fefab7c8047fd1601533 readme.txt提交
+eb0a444c936d54600cf29639a169df1d8f0d411a readme.txt提交
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git reflog
+808b19d HEAD@{0}: reset: moving to HEAD^
+027ed22 HEAD@{1}: commit: readme.txt提交
+808b19d HEAD@{2}: commit: readme.txt提交
+eb0a444 HEAD@{3}: commit (initial): readme.txt提交
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git reset --hard 027ed22
+HEAD is now at 027ed22 readme.txt提交
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ cat readme.txt
+11111111
+2222222222
+33333333333333
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working d                                                        irectory)
+
+        modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working d                                                        irectory)
+
+        modified:   readme.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git add readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git add test.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   readme.txt
+        new file:   test.txt
+
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git commit -m "一次性提交所有文件，包括readme.txt增加444444和新建文件test.txt"                                          fatal: could not open '.git/COMMIT_EDITMSG': Permission denied
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git commit -m "一次性提交所有文件，包括readme.txt增加444444和新建文件test.txt"
+fatal: could not open '.git/COMMIT_EDITMSG': Permission denied
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git commit -m "一次性提交所有文件，包括readme.txt增加444444和新建文件test.txt"
+fatal: could not open '.git/COMMIT_EDITMSG': Permission denied
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ ^C
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ ^C
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git commit -m
+error: switch `m' requires a value
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit hook
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git commit
+fatal: could not open '.git/COMMIT_EDITMSG': Permission denied
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   readme.txt
+        new file:   test.txt
+
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   readme.txt
+        new file:   test.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    test.txt
+
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   readme.txt
+        new file:   test.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   test.txt
+
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git add readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git add test.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git commit -m "一次性提交所有文件，包括readme.txt增加444444和新建文件test.txt"
+fatal: could not open '.git/COMMIT_EDITMSG': Permission denied
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git commit -m "一次性提交所有文件，包括readme.txt增加444444和新建文件test.txt"
+[master 6cf5c51] 一次性提交所有文件，包括readme.txt增加444444和新建文件test.txt
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 test.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git log --pretty=oneline
+6cf5c5193f42e879f797de1e862461dc177f5561 一次性提交所有文件，包括readme.txt增加444444和新建文件test.txt
+027ed2223da4dddfd8baeaa20d7ebeefb2f86f6d readme.txt提交
+808b19d1970704e74371fefab7c8047fd1601533 readme.txt提交
+eb0a444c936d54600cf29639a169df1d8f0d411a readme.txt提交
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ cat readme.txt
+11111111
+2222222222
+33333333333333
+444444444444444444
+55555555555555555555555555
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git checkout -- readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ cat readme.txt
+11111111
+2222222222
+33333333333333
+444444444444444444
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ cat readme.txt
+11111111
+2222222222
+33333333333333
+444444444444444444
+66666666666666
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git add readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ cat readme.txt
+11111111
+2222222222
+33333333333333
+444444444444444444
+66666666666666
+7777777777777
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git checkout -- readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ cat readme.txt
+11111111
+2222222222
+33333333333333
+444444444444444444
+66666666666666
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ cat b.txt
+aaaaaaaaaaa
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git add b.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git commit -m "提交新建文件b.txt"
+[master f93f558] 提交新建文件b.txt
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 b.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ rm b.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    b.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git checkout -- b.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ ssh-keygen -t rsa -C "mrbamboodew@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):
+Created directory '/c/Users/Administrator/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Administrator/.ssh/id_rsa.
+Your public key has been saved in /c/Users/Administrator/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:Ok7nR/uas64HnJs3jc5tn8RrfM4xeqKRWLTFQgocbb4 mrbamboodew@gmail.com
+The key's randomart image is:
++---[RSA 2048]----+
+|      .oo  .     |
+|       ..oo .    |
+|        o. o o   |
+|         .. +    |
+|       .S..o     |
+|       .+E+ ..   |
+|      + .* * .oo |
+|     o +o.Oo+o+=+|
+|      . oBBO++*oo|
++----[SHA256]-----+
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git remote add origin https://github.com/bamboodew/learngit.git
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git push -u origin master
+Counting objects: 17, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (17/17), 1.31 KiB | 0 bytes/s, done.
+Total 17 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/bamboodew/learngit.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git clone https://github.com/bamboodew/king
+Cloning into 'king'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git branch
+* dev
+  master
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ cat readme.txt
+11111111
+2222222222
+33333333333333
+444444444444444444
+66666666666666
+777777777777777
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git add readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git commit -m "dev分支上增加内容7777"
+[dev da96062] dev分支上增加内容7777
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git branch
+  dev
+* master
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ cat readme.txt
+11111111
+2222222222
+33333333333333
+444444444444444444
+66666666666666
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git merge dev
+Updating f93f558..da96062
+Fast-forward
+ readme.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ cat readme.txt
+11111111
+2222222222
+33333333333333
+444444444444444444
+66666666666666
+777777777777777
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git branch -d dev
+Deleted branch dev (was da96062).
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git branch
+* master
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git checkout -b fenzhi1
+Switched to a new branch 'fenzhi1'
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (fenzhi1)
+$ git branch
+* fenzhi1
+  master
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (fenzhi1)
+$ cat readme.txt
+11111111
+2222222222
+33333333333333
+444444444444444444
+66666666666666
+777777777777777
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (fenzhi1)
+$ cat readme.txt
+11111111
+2222222222
+33333333333333
+444444444444444444
+66666666666666
+777777777777777
+8888888888
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (fenzhi1)
+$ git add readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (fenzhi1)
+$ git commit -m "添加内容8888"
+[fenzhi1 bc2ba0f] 添加内容8888
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (fenzhi1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ cat readme.txt
+11111111
+2222222222
+33333333333333
+444444444444444444
+66666666666666
+777777777777777
+8888888888888
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ cat readme.txt
+11111111
+2222222222
+33333333333333
+444444444444444444
+66666666666666
+777777777777777
+9999999999
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git add readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git commit -m "在master分支上添加内容99999999"
+[master dd73e4c] 在master分支上添加内容99999999
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git merge fenzhi1
+Auto-merging readme.txt
+CONFLICT (content): Merge conflict in readme.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master|MERGING)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   readme.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        king/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master|MERGING)
+$ cat readme.txt
+11111111
+2222222222
+33333333333333
+444444444444444444
+66666666666666
+777777777777777
+<<<<<<< HEAD
+9999999999
+=======
+8888888888
+>>>>>>> fenzhi1
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master|MERGING)
+$ cat readme.txt
+11111111
+2222222222
+33333333333333
+444444444444444444
+66666666666666
+777777777777777
+<<<<<<< HEAD
+9999999999
+=======
+8888888888
+>>>>>>> fenzhi1
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master|MERGING)
+$ git branch
+  fenzhi1
+* master
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master|MERGING)
+$ git checkout fenzhi1
+readme.txt: needs merge
+error: you need to resolve your current index first
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master|MERGING)
+$ cat readme.txt
+11111111
+2222222222
+33333333333333
+444444444444444444
+66666666666666
+777777777777777
+8888888888
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master|MERGING)
+$ git add readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master|MERGING)
+$ git commit -m "conflict fixed分支统一、合并"
+[master 921df5f] conflict fixed分支统一、合并
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ cat readme.txt
+11111111
+2222222222
+33333333333333
+444444444444444444
+66666666666666
+777777777777777
+8888888888
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git log --pretty=oneline
+921df5fbf10535231b785fe86feffd804cbe2e7f conflict fixed分支统一、合并
+dd73e4cc034425c844244ecad67e07d765a074fe 在master分支上添加内容99999999
+bc2ba0f088d38671ae8ffe891d16ffb4b0615519 添加内容8888
+da960627252e6c5db301ffb2bf4f07f097c79ebd dev分支上增加内容7777
+f93f55864c1cfcc5522edd41c6096b9c3f7bd329 提交新建文件b.txt
+6cf5c5193f42e879f797de1e862461dc177f5561 一次性提交所有文件，包括readme.txt增加4444                                       44和新建文件test.txt
+027ed2223da4dddfd8baeaa20d7ebeefb2f86f6d readme.txt提交
+808b19d1970704e74371fefab7c8047fd1601533 readme.txt提交
+eb0a444c936d54600cf29639a169df1d8f0d411a readme.txt提交
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git add readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git commit -m "在dev分支上添加9999999"
+[dev b67f8a1] 在dev分支上添加9999999
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git merge --no-ff -m "禁用fast forward模式再合并" dev
+Merge made by the 'recursive' strategy.
+ readme.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git log --pretty=oneline
+602375a93afc76d0501e58a1f3972a3aee8e6fdd 禁用fast forward模式再合并
+b67f8a13ffec37b592f8effdcaa68f65e978e37d 在dev分支上添加9999999
+921df5fbf10535231b785fe86feffd804cbe2e7f conflict fixed分支统一、合并
+dd73e4cc034425c844244ecad67e07d765a074fe 在master分支上添加内容99999999
+bc2ba0f088d38671ae8ffe891d16ffb4b0615519 添加内容8888
+da960627252e6c5db301ffb2bf4f07f097c79ebd dev分支上增加内容7777
+f93f55864c1cfcc5522edd41c6096b9c3f7bd329 提交新建文件b.txt
+6cf5c5193f42e879f797de1e862461dc177f5561 一次性提交所有文件，包括readme.txt增加4444                                       44和新建文件test.txt
+027ed2223da4dddfd8baeaa20d7ebeefb2f86f6d readme.txt提交
+808b19d1970704e74371fefab7c8047fd1601533 readme.txt提交
+eb0a444c936d54600cf29639a169df1d8f0d411a readme.txt提交
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git checkout dev
+Switched to branch 'dev'
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git status
+On branch dev
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   readme.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        king/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git stash
+Saved working directory and index state WIP on dev: b67f8a1 在dev分支上添加9999999
+HEAD is now at b67f8a1 在dev分支上添加9999999
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git checkout mater
+error: pathspec 'mater' did not match any file(s) known to git.
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 6 commits.
+  (use "git push" to publish your local commits)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git checkout -b issue-101
+Switched to a new branch 'issue-101'
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (issue-101)
+$ cat readme.txt
+11111111
+2222222222
+33333333333333
+444444444444444444
+66666666666666
+777777777777777
+8888888888
+9999999
+现在修复bug
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (issue-101)
+$ git add readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (issue-101)
+$ git commit -m "修复bug：issue-101"
+[issue-101 0e28a99] 修复bug：issue-101
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (issue-101)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 6 commits.
+  (use "git push" to publish your local commits)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git merge --no-ff -m "在master分支上合并修复issue-101的内容" issue-101
+Merge made by the 'recursive' strategy.
+ readme.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git branch -d issue-101
+Deleted branch issue-101 (was 0e28a99).
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git checkout dev
+Switched to branch 'dev'
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git status
+On branch dev
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        king/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git stash list
+stash@{0}: WIP on dev: b67f8a1 在dev分支上添加9999999
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git stash pop
+On branch dev
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   readme.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        king/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (3368b13319c5948d16d2abb49c1f173956543369)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git stash list
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git status
+On branch dev
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   readme.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        king/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git add readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git commit -m "提交stash之前的内容"
+[dev 2cbdd7a] 提交stash之前的内容
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ cat readme.txt
+11111111
+2222222222
+33333333333333
+444444444444444444
+66666666666666
+777777777777777
+8888888888
+9999999
+当前正在dev上进行的工作还没有提交
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 8 commits.
+  (use "git push" to publish your local commits)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 8 commits.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        king/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 8 commits.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   readme.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        king/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git add readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git commit -m "已完成修复"
+[master 6c7b1ea] 已完成修复
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 9 commits.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        king/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git merge --no-ff -m "在master分支上合并修复dev分支" dev
+Auto-merging readme.txt
+CONFLICT (content): Merge conflict in readme.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master|MERGING)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 9 commits.
+  (use "git push" to publish your local commits)
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   readme.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        king/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master|MERGING)
+$ git add readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master|MERGING)
+$ git commit -m "将master上的内容和dev的内容修改成一致"
+[master 1ba4cd0] 将master上的内容和dev的内容修改成一致
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git checkout dev
+Switched to branch 'dev'
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git status
+On branch dev
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   readme.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        king/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git add readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git commit -m "修改dev上的内容使其与master一致"
+[dev 07d5cda] 修改dev上的内容使其与master一致
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git merge --no-ff -m "在dev分支上合并master" master
+Auto-merging readme.txt
+CONFLICT (content): Merge conflict in readme.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev|MERGING)
+$ git checkout master
+readme.txt: needs merge
+error: you need to resolve your current index first
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev|MERGING)
+$ git checkout master
+readme.txt: needs merge
+error: you need to resolve your current index first
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev|MERGING)
+$ git add readme.txt
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev|MERGING)
+$ git commit -m "修改dev使其与master一致"
+[dev 5ac77bc] 修改dev使其与master一致
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (dev)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 11 commits.
+  (use "git push" to publish your local commits)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git merge --no-ff -m "在master分支上合并dev" dev
+Merge made by the 'recursive' strategy.
+ readme.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 14 commits.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        king/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@WIN-20150501LJT MINGW64 /g/Git/learngit (master)
+$ cat
+readme.txt
+readme.txt
+
+
+cat readme.txt
+cat readme.txt                                                                                                            
+
+
+
+
+git status
+ggit status
+$ git status
+$ git status
